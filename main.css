@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Poppins:wght@300;400&display=swap');
+body{
+    background: #FBFbfb;
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+}
+.ueberschrift{
+    width: 100%;
+    background: #FFFFFF;
+    height: 75px;
+    display: flex;
+    box-shadow: 0px 2px 5px black;
+}
+.ueberschrift .titel{
+    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ueberschrift .bancoslogo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content{
+    margin: 100px;
+    margin-top: 50px;
+}
+.uhrzeit .uhr{
+    font-size: 80px;
+    height: 100px;
+}
+.uhrzeit .datum{
+    font-size: x-large;
+}
+
+.zeitleiste{
+    display: flex;
+}
+.zeitleiste .wetter{
+    width: 400px;
+    height: 30px;
+    border-radius: 100px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.officelinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.internetlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.linksammlung{
+    display: flex;
+    margin-top: 50px;
+}
+.logotitle{
+    display: flex;
+    
+}
+.logotitle .title{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.link{
+    margin-top:10px;
+    margin-bottom: 20px ;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+}
+.innerlink {
+    transition: transform .2s;
+    width: fit-content;
+}
+.innerlink:hover {
+    transform: scale(1.2); 
+}
+.linksammlungeingabe{
+    display: flex;
+    
+}
+
+.linksammlungeingabe .eingabe{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.linksammlungeingabe .notizen .title{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.linksammlungeingabe .do .title{
+    font-size: x-large;
+    font-weight: bold;
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.weatherwidget-io{
+    transition: transform .2s;
+    border-radius: 25px;
+}
+.weatherwidget-io:hover{
+    transform: scale(1.2);
+}
+textarea {
+    resize: none;
+    border: none;
+    box-shadow: 0px 1px 5px black;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Poppins, sans-serif;
+
+ }
+ a { 
+     text-decoration: none;
+     color:black;
+ }
