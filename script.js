@@ -62,7 +62,7 @@ function updateTime(){
         var r = weekdays[today.getDay()];
         document.getElementsByClassName("datum")[0].innerHTML = r +", "+addzero(today.getDate())+"."+addzero(parseInt(today.getMonth())+1)+"."+today.getFullYear()
     
-    console.log("saving cookies value: ",document.getElementsByClassName("notizeninput")[0].value, "do: ", document.getElementsByClassName("doinput")[0].value )
+    
     stringToCookie("notizen", document.getElementsByClassName("notizeninput")[0].value)
     stringToCookie("do", document.getElementsByClassName("doinput")[0].value);
 
@@ -80,5 +80,5 @@ window.onload = function(){
     document.getElementsByClassName("notizeninput")[0].value = cookieToString("notizen");
     document.getElementsByClassName("doinput")[0].value = cookieToString("do");
 }
-console.log("cookies are: ", cookieToString("notizen"), cookieToString("do"))
+
 updateTime()
