@@ -24,20 +24,21 @@ function eraseCookie(name) {
 }
 function stringToCookie(name, string){
     lines = string.split("\n");
+    setCookie(name+"#!length", lines.length.toString(), 7);
     for( let i = 0; i<lines.length ;i++){
-        setCookie(name+i.toString(), lines[i]+"~", 7)
+        if(i == lines.length-1){
+            setCookie(name+i.toString(), lines[i], 7)
+        }else{
+            setCookie(name+i.toString(), lines[i]+"~", 7)
+        }
+        
     }
 }
 function cookieToString(name){
     out = ""
-    i = 0
-    while(true){
-        content = getCookie(name+i.toString())
-        if(content == null){
-            break;
-        }
-        out += content;
-        i = i+1;
+    lines = parseInt(getCookie(name+"#!length"));
+    for(let i=0;i<lines;i++){
+        out += getCookie(name+i.toString());
     }
     return out;
 }
